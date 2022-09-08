@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>TOMS WORLD | CENTRALIZED SYSTEM</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="assets/img/main-icon.png" rel="icon">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.css" />
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body onload="startTime()">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="dashboard.html" class="logo-main d-flex align-items-center">
+                <span>WELCOME! SAMPLE USER</span>
+            </a>
+        </div><!-- End Logo -->
+
+        <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+                <li class="nav-item dropdown">
+
+                    <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                        <i class="bi bi-bell"></i>
+                        <span class="badge bg-warning badge-number">4</span>
+                    </a><!-- End Notification Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+                        <li class="dropdown-header">
+                            You have 4 new notifications
+                            <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-exclamation-circle text-warning"></i>
+                            <div>
+                                <h4>Sample data 1</h4>
+                                <p>Sample description 1</p>
+                                <p>30 min. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-x-circle text-danger"></i>
+                            <div>
+                                <h4>Sample data 2</h4>
+                                <p>Sample description 2</p>
+                                <p>1 hr. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-check-circle text-success"></i>
+                            <div>
+                                <h4>Sample data 3</h4>
+                                <p>Sample description 3</p>
+                                <p>2 hrs. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li class="notification-item">
+                            <i class="bi bi-info-circle text-primary"></i>
+                            <div>
+                                <h4>Sample data 4</h4>
+                                <p>Sample description 4</p>
+                                <p>4 hrs. ago</p>
+                            </div>
+                        </li>
+
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li class="dropdown-footer">
+                            <a href="#">Show all notifications</a>
+                        </li>
+
+                    </ul><!-- End Notification Dropdown Items -->
+
+                </li><!-- End Notification Nav -->
+
+                <li class="nav-item dropdown pe-3">
+
+                    <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+                        <img src="assets/img/faq_man.png" alt="Profile" class="rounded-circle">
+                        <span class="d-none d-md-block dropdown-toggle ps-2">PROFILE SETTINGS</span>
+                    </a><!-- End Profile Iamge Icon -->
+
+                    <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                        <li class="dropdown-header">
+                            <h6>Sample User</h6>
+                            <span>Web Developer</span>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="bi bi-person"></i>
+                                <span>My Profile</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                                <i class="bi bi-gear"></i>
+                                <span>Account Settings</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
+                                <i class="bi bi-question-circle"></i>
+                                <span>Need Help?</span>
+                            </a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#">
+                                <i class="bi bi-box-arrow-right"></i>
+                                <span>Sign Out</span>
+                            </a>
+                        </li>
+
+                    </ul><!-- End Profile Dropdown Items -->
+                </li><!-- End Profile Nav -->
+
+            </ul>
+        </nav><!-- End Icons Navigation -->
+
+    </header><!-- End Header -->
+
+    <main id="main" class="main">
+        <div class="container-fluid">
+            <div class="pagetitle">
+                <h1>Dashboard</h1>
+                <nav>
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="dashboard.html">Home</a></li>
+                        <li class="breadcrumb-item active">Dashboard</li>
+                    </ol>
+                </nav>
+            </div><!-- End Page Title -->
+
+            <section class="main-section dashboard">
+                <div class="row">
+
+                    <!-- Left side columns -->
+                    <div class="col-lg-7">
+                        <div class="row">
+
+                            <!-- User Card -->
+                            <div class="col-xxl-12 col-md-6">
+                                <div class="card info-card">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">USER RESTRICTION</h5>
+                                        <div class="fw-bold">You are allowed to access:</div>
+                                        <span>HRIS / HELPDESK / DCM</span>
+                                        <hr class="mt-2 mb-2">
+                                        <div class="fw-bold">You are permitted to access:</div>
+                                        <span>SYSTEM 1 / SYSTEM 2 / SYSTEM 3</span>
+                                    </div>
+
+                                </div>
+                            </div><!-- End User Card -->
+
+                            <!-- Main Menu -->
+                            <div class="col-12">
+                                <div class="card">
+
+                                    <div class="card-body">
+                                        <h5 class="card-title">MAIN MENU</h5>
+
+                                        <nav>
+                                            <div class="nav nav-tabs border border-secondary" id="nav-tab"
+                                                role="tablist">
+                                                <button class="nav-link active text-warning fw-bold" id="nav-tws-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-tws" type="button"
+                                                    role="tab" aria-controls="nav-tws" aria-selected="true">TWS</button>
+
+                                                <button class="nav-link text-warning fw-bold" id="nav-outsource-tab"
+                                                    data-bs-toggle="tab" data-bs-target="#nav-outsource" type="button"
+                                                    role="tab" aria-controls="nav-profoutsourceile"
+                                                    aria-selected="false">OUTSOURCE</button>
+
+                                            </div>
+                                        </nav>
+                                        <!-- TABS -->
+                                        <div class="tab-content p-3 border border-secondary" id="nav-tabContent">
+
+                                            <!-- TWS -->
+                                            <div class="tab-pane fade show active" id="nav-tws" role="tabpanel"
+                                                aria-labelledby="nav-tws-tab">
+
+                                                <div class="row g-2">
+
+                                                    <!-- Helpdesk Card -->
+                                                    <div class="col-xxl-4 col-md-6">
+                                                        <a href="" style="color: #444444;">
+                                                        <div class="card info-card menu-card">
+
+                                                            <div class="card-body">
+                                                                <!-- <h5 class="card-title">Ticket <span>| Today</span></h5> -->
+
+                                                                <div class="d-flex align-items-center mt-4">
+                                                                    <div
+                                                                        class="card-icon d-flex align-items-center justify-content-center">
+                                                                        <img src="assets/img/icons/helpdesk.png" alt="">
+                                                                    </div>
+                                                                    <div class="ps-4 text-center">
+                                                                        <span class="small pt-1 fw-bold">HELP DESK
+                                                                            SUPPORT
+                                                                        </span>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </a>
+                                                    </div><!-- End Helpdesk Card -->
+
+                                                    <!-- Warehouse Card -->
+                                                    <div class="col-xxl-4 col-md-6">
+                                                        <a href="" style="color: #444444;">
+                                                        <div class="card info-card menu-card">
+
+                                                            <div class="card-body">
+                                                                <!-- <h5 class="card-title">Ticket <span>| Today</span></h5> -->
+
+                                                                <div class="d-flex align-items-center mt-4">
+                                                                    <div
+                                                                        class="card-icon d-flex align-items-center justify-content-center">
+                                                                        <img src="assets/img/icons/warehouse.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="ps-4 text-center">
+                                                                        <span class="small pt-1 fw-bold">WAREHOUSE &
+                                                                            LOGISTICS
+                                                                        </span>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </a>
+                                                    </div><!-- End Warehouse Card -->
+
+                                                    <!-- Procurement Card -->
+                                                    <div class="col-xxl-4 col-md-6">
+                                                        <a href="" style="color: #444444;">
+                                                        <div class="card info-card menu-card">
+
+                                                            <div class="card-body">
+                                                                <!-- <h5 class="card-title">Ticket <span>| Today</span></h5> -->
+
+                                                                <div class="d-flex align-items-center mt-4">
+                                                                    <div
+                                                                        class="card-icon d-flex align-items-center justify-content-center">
+                                                                        <img src="assets/img/icons/procurement.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="ps-4 text-center">
+                                                                        <span class="small pt-1 fw-bold">PROCUREMENT
+                                                                        </span>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </a>
+                                                    </div><!-- End Procurement Card -->
+
+                                                    <!-- DCM Card -->
+                                                    <div class="col-xxl-4 col-md-6">
+                                                        <a href="" style="color: #444444;">
+                                                        <div class="card info-card menu-card">
+
+                                                            <div class="card-body">
+                                                                <!-- <h5 class="card-title">Ticket <span>| Today</span></h5> -->
+
+                                                                <div class="d-flex align-items-center mt-4">
+                                                                    <div
+                                                                        class="card-icon d-flex align-items-center justify-content-center">
+                                                                        <img src="assets/img/icons/folders.png" alt="">
+                                                                    </div>
+                                                                    <div class="ps-4 text-center">
+                                                                        <span class="small pt-1 fw-bold">DOCUMENT
+                                                                            MONITORING
+                                                                        </span>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </a>
+                                                    </div><!-- End DCM Card -->
+
+                                                    <!-- Inventory Card -->
+                                                    <div class="col-xxl-4 col-md-6">
+                                                        <a href="" style="color: #444444;">
+                                                        <div class="card info-card menu-card">
+
+                                                            <div class="card-body">
+                                                                <!-- <h5 class="card-title">Ticket <span>| Today</span></h5> -->
+
+                                                                <div class="d-flex align-items-center mt-4">
+                                                                    <div
+                                                                        class="card-icon d-flex align-items-center justify-content-center">
+                                                                        <img src="assets/img/icons/inventory.png"
+                                                                            alt="">
+                                                                    </div>
+                                                                    <div class="ps-4 text-center">
+                                                                        <span class="small pt-1 fw-bold">INVENTORY
+                                                                            MANAGEMENT
+                                                                        </span>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </a>
+                                                    </div><!-- End Inventory Card -->
+
+                                                    <!-- Merchandizing Card -->
+                                                    <div class="col-xxl-4 col-md-6">
+                                                        <a href="" style="color: #444444;">
+                                                        <div class="card info-card menu-card">
+
+                                                            <div class="card-body">
+                                                                <!-- <h5 class="card-title">Ticket <span>| Today</span></h5> -->
+
+                                                                <div class="d-flex align-items-center mt-4">
+                                                                    <div
+                                                                        class="card-icon d-flex align-items-center justify-content-center">
+                                                                        <img src="assets/img/icons/products.png" alt="">
+                                                                    </div>
+                                                                    <div class="ps-4 text-center">
+                                                                        <span class="small pt-1 fw-bold">MERCHANDISING
+                                                                        </span>
+
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </a>
+                                                    </div><!-- End Merchandizing Card -->
+
+
+                                                </div>
+
+                                            </div><!-- END TWS -->
+
+                                            <div class="tab-pane fade" id="nav-outsource" role="tabpanel"
+                                                aria-labelledby="nav-outsource-tab">...</div>
+
+                                        </div><!-- END TABS -->
+
+
+                                    </div>
+
+                                </div>
+                            </div><!-- End Main Menu -->
+
+                        </div>
+                    </div><!-- End Left side columns -->
+
+                    <!-- Right side columns -->
+                    <div class="col-lg-5">
+
+                        <!-- MEMO BOARD -->
+                        <div class="card">
+
+                            <div class="card-body pb-0">
+                                <h5 class="card-title">MEMO BOARD</h5>
+
+                            </div>
+                        </div><!-- End MEMO BOARD  -->
+
+                        <!-- CALENDAR -->
+                        <div class="card">
+
+                            <div class="card-body">
+                                <h5 class="card-title">CALENDAR</h5>
+
+                                <div id="calendar"></div>
+
+                            </div>
+
+                        </div>
+                    </div><!-- CALENDAR -->
+
+                </div><!-- End Right side columns -->
+
+            </section>
+        </div><!-- End Container-fluid -->
+    </main>
+
+    <div class="footer d-flex align-items-center">
+        <div class="d-flex align-items-center justify-content-between">
+            <a href="dashboard.html" class="logo-main d-flex align-items-center">
+                <span>TOMS WORLD PHILIPPINES</span>
+            </a>
+        </div><!-- End Logo -->
+        <div class="ms-auto me-5 pe-3">
+            <div class="d-flex align-items-center">
+                <div id="clock" class="me-2"></div>
+                <div id="date"></div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.min.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.4.0/fullcalendar.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+    <script>
+        function startTime() {
+            var today = new Date();
+            var hr = today.getHours();
+            var min = today.getMinutes();
+            var sec = today.getSeconds();
+            ap = (hr < 12) ? "<span>AM</span>" : "<span>PM</span>";
+            hr = (hr == 0) ? 12 : hr;
+            hr = (hr > 12) ? hr - 12 : hr;
+            //Add a zero in front of numbers<10
+            hr = checkTime(hr);
+            min = checkTime(min);
+            sec = checkTime(sec);
+            document.getElementById("clock").innerHTML = hr + ":" + min + ":" + sec + " " + ap;
+
+            var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+            var days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+            var curWeekDay = days[today.getDay()];
+            var curDay = today.getDate();
+            var curMonth = months[today.getMonth()];
+            var curYear = today.getFullYear();
+            var date = curWeekDay + ", " + curDay + " " + curMonth + " " + curYear;
+            document.getElementById("date").innerHTML = date;
+
+            var time = setTimeout(function () { startTime() }, 500);
+        }
+        function checkTime(i) {
+            if (i < 10) {
+                i = "0" + i;
+            }
+            return i;
+        }
+    </script>
+    <script>
+        $(document).ready(function () {
+
+            $('#calendar').fullCalendar({
+
+                displayEventTime: false,
+                timeFormat: 'H(:mm)',
+
+                // header: {
+                //     left: 'prev,next today',
+                //     center: 'title',
+                //     right: 'month,agendaWeek,agendaDay'
+                // },
+
+                allDayDefault: false,
+                editable: true,
+                droppable: true,
+                height: 530,
+
+                // eventRender: function(event, el) {
+                //     // el.find('.fc-content').html("<i class='fa fa-camera-retro fa-3x'></i>");
+                // },
+                // events: [{
+                //     title: 'event1',
+                //     start: '2022-09-01 06:44:00'
+                // }, {
+                //     title: 'event2',
+                //     start: '2022-09-05 06:50:00',
+                // }, {
+                //     title: 'event3',
+                //     start: '2017-02-01 10:50:00',
+                // }, {
+                //     title: 'event3',
+                //     start: '2017-02-01 12:50:00',
+                // }, {
+                //     title: 'event3',
+                //     start: '2017-02-01 13:50:00',
+                // }, ]
+            })
+        });
+    </script>
+
+</body>
+
+</html>
